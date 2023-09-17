@@ -31,8 +31,6 @@ export const Login = () => {
 //   onSubmit,
 // });
 
-
-
   return (
     <div className='flex'>
       <img className='h-[100vh]' src={Background} alt='' />
