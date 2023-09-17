@@ -1,11 +1,14 @@
 import React from 'react';
 
-const Buttons = () => {
+const Button = ({text}) => {
     return (
-        <div>
-            123456789
-        </div>
+        <button
+        type="submit"
+        className="w-[520px] p-[16px] text-[20px] text-white bg-[#359BF9] hover:bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg "
+      >
+        {text}
+      </button>
     );
 }
 
-export default Buttons;
+export default Button;
