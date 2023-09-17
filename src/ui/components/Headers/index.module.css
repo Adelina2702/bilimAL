@@ -3,15 +3,13 @@
     width: 90%;
     margin: 0 auto;
     justify-content: space-between;
-    padding-top: 27px;
-
-
-
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
 }
 
 
-.conteiner_headers {
+.conteiner_headers, .conteiner_login_headers {
     background: #54A3FF;
     /* position: fixed;
     top: 0;
@@ -25,25 +23,32 @@
 
 }
 
-.navbar_allSing {
-    display: flex;
+.conteiner_login_headers {
+    background: white;
+}
 
+
+.navbar_allSing, .navbar_allSing_login {
+    display: flex;
     justify-content: space-between;
     color: #FFF;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
+}
 
-
+.navbar_allSing_login {
+    color: black;
 }
 
 .navbar_enter {
     margin-right: 40px;
+    cursor: pointer;
 
     /* 28px */
 }
 
-.title {
+.title, .title_login {
     color: #FFF;
     font-family: MuseoModerno;
     font-size: 28px;
@@ -52,10 +57,15 @@
     line-height: normal;
 }
 
+.title_login {
+    color: black;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar_enter {}
@@ -67,5 +77,4 @@
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-
 }

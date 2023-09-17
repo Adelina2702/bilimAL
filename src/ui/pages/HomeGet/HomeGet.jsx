@@ -4,6 +4,9 @@ import Headers from '../../components/Headers/Headers';
 import { course1, course2, icon1, icon2, icon3, premCourses1, premCourses2, } from '../../images';
 import gift from '../../images/Frame 359.gif.mp4'
 import Div from '../../components/conteiner/Div';
+import Button from "../../components/Button";
+import {Link} from "react-router-dom";
+import Footer from "../../components/Footer";
 
 
 
@@ -121,9 +124,7 @@ const HomeGet = () => {
 
                     </div>
 
-                    <button style={{ paddingTop: '40px' }} >
-                        Узнать больше
-                    </button>
+                    <Button text='Узнать больше' padding='px-4 py-2' textSize='text-lg'/>
 
                 </div>
             </div>
@@ -148,7 +149,7 @@ const HomeGet = () => {
                 <p className={styles.info}>
                     Узнайте больше о наших курсах зарегистрировавшись на нашем сайте
                 </p>
-                <button>Зарегистрироваться</button>
+                <Link to={'/register'}><Button padding='px-8 py-4' text='Зарегистрироваться'/></Link>
 
                 <div className={styles.possibleС}>
                     {
@@ -173,10 +174,11 @@ const HomeGet = () => {
                     }
                 </div>
                 <div className={styles.btn}>
-                    <button> Смотреть больше</button>
+                    <Button padding='px-6 py-2' text='Смотреть больше'/>
                 </div>
 
             </div>
+            <Footer/>
         </div>
     );
 }
