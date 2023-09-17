@@ -1,0 +1,60 @@
+.conteiner {
+    display: flex;
+    max-width: 570px;
+    border-radius: 12px;
+    border: 1px solid #E3E4E5;
+
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.divText {
+
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 17px;
+
+}
+
+.icon {
+
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 33.6px */
+}
+
+.text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 30.8px */
+    letter-spacing: 0.88px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+
+@media screen and (max-width: 1290px) {
+    .conteiner {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Для Chrome и Safari */
+body::-webkit-scrollbar {
+    width: 1px;
+    background: #E3E4E5;
+}

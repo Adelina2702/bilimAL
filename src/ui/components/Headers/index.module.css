@@ -1,0 +1,71 @@
+.headers {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 27px;
+
+
+
+
+}
+
+
+.conteiner_headers {
+    background: #54A3FF;
+    /* position: fixed;
+    top: 0;
+    bottom: 0; */
+    position: fixed;
+    top: 0;
+
+    z-index: 5;
+
+    width: 100%;
+
+}
+
+.navbar_allSing {
+    display: flex;
+
+    justify-content: space-between;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+
+
+}
+
+.navbar_enter {
+    margin-right: 40px;
+
+    /* 28px */
+}
+
+.title {
+    color: #FFF;
+    font-family: MuseoModerno;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_enter {}
+
+.sing {}
+
+.navbar_language {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+
+}
