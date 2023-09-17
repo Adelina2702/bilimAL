@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../ui/pages/Home';
 import { Register } from '../ui/pages/Register';
 import { Login } from '../ui/pages/Auth';
+import View from '../ui/pages/View';
 
 export const Router = () => {
     return (
@@ -10,6 +11,7 @@ export const Router = () => {
             <Route path='/' element={<Home/>} />
             <Route path='/register' element={<Register/>} /> 
             <Route path='/login' element={<Login/>} /> 
-        </Routes>
+            <Route path='/view' element={<View/>} />
+            </Routes>
     );
 };
