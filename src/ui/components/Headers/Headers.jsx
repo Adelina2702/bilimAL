@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './index.module.css'
 import {Link, useNavigate} from "react-router-dom";
+import Arrow from '../../icons/Arrow';
+import ArrowWhite from '../../icons/ArrowWhite';
 
 export default function Headers() {
   const navigate = useNavigate()
@@ -28,19 +30,23 @@ export default function Headers() {
                             <Link to={'/home'}><h1 className={styles.navbar_enter}>Мое обучение</h1></Link>
                               <Link to={'/community'}><h1 className={styles.navbar_enter}>Сообщество</h1></Link>
                             <Link to={'/profile'}><h1 className={styles.navbar_enter}>Профиль </h1></Link>
-                            <div className='flex gap-2'>
-                                <h1 className={styles.navbar_enter}>Русский </h1>
-                                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"></path>
-                                </svg>
+                            <div className='flex '>
+                                <div className={styles.navbar_enter}>Русский
+                               <span><Arrow/></span> 
+                                </div>
                               </div>
                             <h1 onClick={logout} className={styles.navbar_enter}>Выйти </h1>
                           </div>
                         ) : (
                           <div className={styles.navbar_allSing} >
-                            <div className='flex gap-2 w-fit'>
+                            {/* <div className='flex gap-2 w-fit'>
                               <h1 className={styles.navbar_enter}>Русский</h1>
-                            </div>
+                            </div> */}
+                            <div className='flex '>
+                                <div className={styles.navbar_enter}>Русский
+                               <span><ArrowWhite/></span> 
+                                </div>
+                                </div>
                               <Link to={'/login'}><h1 className={styles.navbar_enter}>Войти</h1></Link>
                               <Link to={'/register'}><h1 className={styles.navbar.sing}>Регистрация</h1></Link>
                           </div>

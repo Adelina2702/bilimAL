@@ -55,6 +55,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    cursor: pointer;
 }
 
 .title_login {
@@ -68,7 +69,9 @@
     cursor: pointer;
 }
 
-.navbar_enter {}
+.navbar_enter {
+    display: flex;
+}
 
 .sing {}
 
